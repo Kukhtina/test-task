@@ -1,0 +1,31 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+}
+
+.header > * {
+    box-sizing: border-box;
+}
+
+.header > *:not(:last-child) {
+    padding: 0 10px 0 5px;
+}
+
+.header .id {
+    width: 50px;
+}
+
+.header .title, .header .description {
+    width: calc(50% - 50px);
+}
+
+.header .status {
+    width: 50px;
+}

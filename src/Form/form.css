@@ -1,0 +1,42 @@
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.form {
+   display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-container .error-message {
+    position: absolute;
+    top: 100%;
+    margin: 5px 0 0;
+    color: red;
+}
+
+.input-container.error input {
+    border-color: red;
+}
+
+.input-container.error input::placeholder {
+    color: red;
+}
+
+.create-button {
+    height: 20px;
+}
+
+.label {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,30 @@
+.items-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-container > * {
+    box-sizing: border-box;
+}
+
+.items-container > *:not(:last-child) {
+    padding: 0 10px 0 5px;
+}
+
+.items-container .id {
+    min-width: 50px;
+}
+
+.items-container .title, .items-container .description {
+    width: calc(50% - 50px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.items-container .checkbox-container {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
